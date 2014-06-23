@@ -27,9 +27,11 @@ function (Settings) {
      * Note: this can also be an object if you want to pass options to the http client. For example:
      *
      *  +elasticsearch: {server: "http://localhost:9200", withCredentials: true}+
-     *
+     * 
+     * TODO: Load this from environment configuration
      */
-    elasticsearch: window.location.protocol+"//"+window.location.hostname,
+     
+    elasticsearch: "http://146.148.4.228:9200",
 
     /** @scratch /configuration/config.js/5
      *
